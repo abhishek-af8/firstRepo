@@ -1,0 +1,96 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #202020;
+}
+
+
+.nav-container{
+    margin-bottom: 40px;
+}
+
+
+h2{
+    color: #535353;
+    margin-bottom: 20px;
+}
+
+/* nav1 */
+
+.nav1 {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.nav1 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav1 li{
+    display: inline;
+}
+
+
+.nav1 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    position: relative;
+}
+
+
+.nav1 a::after{
+    content:"";
+    position:absolute;
+    height: 2px;
+    width: 100%;
+    bottom:0;
+    left:0;
+    background-color: #4a4a4a;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+
+.nav1 a:hover::after{
+    transform: scaleX(0.8);
+}
+
+
+.nav1 .login-btn{
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(to right, #232526 0%, #414345 50%, #232526 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+
+.nav1 .login-btn:hover{
+    background-position: right center;
+    color: #fff;
+}
+
+
+/* nav2 */
+
+.nav2{
+    background-color: #343a40;
+}
+
+
+/* nav3 */
+

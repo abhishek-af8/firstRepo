@@ -1,0 +1,69 @@
+.nav2 {
+  background-color: black;
+  padding: 10px;
+  width: 150px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.nav2 li:first-child {
+  margin-top: 10px;
+}
+
+.nav2 button {
+  margin-bottom: 10px;
+}
+
+.nav2 ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav2 li {
+  margin-bottom: 10px;
+}
+
+.nav2 a {
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-align: center;
+  transition: 1s;
+}
+
+.nav2 a:hover {
+  background: linear-gradient(to right, #232526 0%, #414345 50%, #232526 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-position: right center;
+}
+
+.nav2 .login-btn {
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #232526 0%, #414345 50%, #232526 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav2 .login-btn:hover {
+  background-position: right center;
+  color: #fff;
+}
