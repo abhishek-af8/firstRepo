@@ -59,7 +59,7 @@ h2{
     left:0;
     background-color: #5e5e5e;
     transform: scaleX(0);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 
 
@@ -84,6 +84,7 @@ h2{
 .nav1 .login-btn:hover{
     background-position: right center;
     border: 1px solid #fff;
+    transition: 0.5s;
 }
 
 
@@ -119,7 +120,7 @@ h2{
 
 
 .nav2 a:hover {
-    background: linear-gradient(to right, #111111 0%, #29292a 50%, #232526 100%);
+  background: linear-gradient(to right, #111111 0%, #29292a 50%, #232526 100%);
   transition: 0.5s;
   background-size: 200% auto;
   background-position: right center;
@@ -142,6 +143,7 @@ h2{
 .nav2 .login-btn:hover {
   background-position: right center;
   border: 1px solid #fff;
+  transition: 0.5s;
 }
 
 
@@ -231,5 +233,6 @@ h2{
 .nav3 .login-btn:hover{
     background-position: right center;
     border: 1px solid #fff;
+    transition: 0.5s;
 }
 
