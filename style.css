@@ -31,6 +31,8 @@ h2{
     justify-content: space-around;
     margin: 0;
     padding: 0;
+
+    /* all the ul(s0 have an implicit padding and margin */
 }
 
 
@@ -55,7 +57,7 @@ h2{
     width: 100%;
     bottom:0;
     left:0;
-    background-color: #4a4a4a;
+    background-color: #5e5e5e;
     transform: scaleX(0);
     transition: transform 0.3s;
 }
@@ -81,16 +83,153 @@ h2{
 
 .nav1 .login-btn:hover{
     background-position: right center;
-    color: #fff;
+    border: 1px solid #fff;
 }
 
 
 /* nav2 */
 
 .nav2{
-    background-color: #343a40;
+    background-color: #000;
+    width: 200px;
+    padding: 20px;
+}
+
+
+.nav2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav2 li{
+    margin-bottom: 12px;
+}
+
+
+.nav2 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    display : block;
+    padding: 8px;
+    width: 92.5%;
+}
+
+
+.nav2 a:hover {
+    background: linear-gradient(to right, #111111 0%, #29292a 50%, #232526 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-position: right center;
+}
+
+
+.nav2 .login-btn{
+    font-size: 20px;
+    background: linear-gradient(to right, #232526 0%, #414345 50%, #232526 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.nav2 .login-btn:hover {
+  background-position: right center;
+  border: 1px solid #fff;
 }
 
 
 /* nav3 */
+
+.nav3{
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 200px;
+}
+
+
+.nav3 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;      /*Very Imp [Left-> Right]*/
+    align-items: center;        /*Top -> Bottom*/
+}
+
+
+.nav3 a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    display: block;
+    font-size: 20px;
+}
+
+
+.nav3 .dropdown-content{        /*Very Imp*/
+    display: none;
+    border-radius: 5px;
+}
+
+
+.nav3 .dropdown-content a{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+
+.nav3 .dropdown-content a:last-child{
+    margin-bottom: 20px;
+}
+
+
+.nav3 .dropdown-content a:first-child{
+    margin-top: 20px;
+}
+
+
+.nav3 .dropdown:hover .dropdown-content{        /*Very Imp*/
+    display: block;
+    position: absolute;                 /*absolute : Rips apart your content from the DOM and puts it somehwhere else*/
+    background-color: #000000;
+    width: 140px;
+}
+
+
+.nav3 .dropdown:hover .dropdown-content a:hover{
+    background: linear-gradient(to right, #111111 0%, #29292a 50%, #232526 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-position: right center;
+    /* border: 0.5px solid #fff;
+    border-radius: 5px; */
+}
+
+
+.nav3 .login-btn{
+    font-size: 20px;
+    background: linear-gradient(to right, #232526 0%, #414345 50%, #232526 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.nav3 .login-btn:hover{
+    background-position: right center;
+    border: 1px solid #fff;
+}
 
